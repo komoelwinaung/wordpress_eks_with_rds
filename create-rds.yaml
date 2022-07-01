@@ -1,0 +1,17 @@
+apiVersion: k8s.io/v1
+kind: Database
+metadata:
+  name: mypgsql
+  namespace: default
+spec:
+  class: db.t2.micro
+  engine: mysql
+  dbname: test_db
+  name: test_rds
+  deleteprotection: false
+  password:
+    key: test_key
+    name: secret
+  username: mysqluser
+  size: 10
+  tags: "environment=test,team=backend"
