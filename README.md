@@ -1,5 +1,5 @@
 # wordpress_eks_with_rds
-Deploy WordPress Pod in EKS with RDS
+# Deploy WordPress Pod in EKS with RDS
 
 
 Idea & Tutorial Credit to 
@@ -8,8 +8,8 @@ https://www.linkedin.com/pulse/wordpress-deployment-aws-eks-cluster-mysql-rds-us
 Prerequisites and Testing Environment! AWS Account, Cli, EKS, kubectl, eksctl and RDS
 
 1. Create a new cluster and node in EKS - eksctl create cluster -f cluster-create.yaml
-    Connect with your cluster - aws eks update-kubeconfig --name your-clutser --region ap-southeast-1
-    Check all resources are ready - kubectl get all
+    1.1 Connect with your cluster - aws eks update-kubeconfig --name your-clutser --region ap-southeast-1
+    1.2 Check all resources are ready - kubectl get all
 
 2. Create a RDS for wordpress - kubectl apply -f create-rds.yaml
 
