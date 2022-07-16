@@ -16,8 +16,7 @@ Prerequisites and Testing Environment! AWS Account, Cli, EKS, kubectl, eksctl an
 
 3. Once RDS is ready, deploy a new pod for WordPress site 
     * kubectl apply -f wordpress-site.yaml
-   Then expose your service with ELB 
-    * kubectl expose deployment/wordpress --port 80 --target-port 80 --name wordpress-service --type LoadBalancer
+    * Expose your service with ELB - kubectl expose deployment/wordpress --port 80 --target-port 80 --name wordpress-service --type LoadBalancer
 
 After that, browse your ELB url, configure the required settings in WordPress dashboard for your website.
 Enjoy!!
