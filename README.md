@@ -15,6 +15,8 @@ Once RDS is ready, deploy a new pod for WordPress site
 
 - kubectl apply -f wordpress-site.yaml
 - Expose your service with ELB - kubectl expose deployment/wordpress --port 80 --target-port 80 --name wordpress-service --type LoadBalancer
+
+
 After that, browse your ELB url, configure the required settings in WordPress dashboard for your website. 
 
 That's it. Enjoy!!
